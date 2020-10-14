@@ -1,0 +1,31 @@
+body {
+  font-family: "Cutive Mono", monospace;
+  font-family: "EB Garamond", serif;
+  background-color: #EFEFEF;
+  line-height: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.enviar {
+  height: 55px;
+  width: 200px;
+  background-color: #2A2422;
+  font-family: "EB Garamond", serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 24px;
+  color: #EFEFEF;
+  border: 0;
+}
+@media (max-width: 720px) {
+  .enviar {
+    margin-left: auto;
+    height: 35px;
+    width: 90px;
+    font-size: 14px;
+  }
+}

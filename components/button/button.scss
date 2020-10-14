@@ -1,0 +1,40 @@
+//vars
+$color1:#2A2422;
+$color2:#C4C4C4;
+$color3:#6A6C78;
+$color4:#EFEFEF;
+
+//BREAKPOINTS
+$sm: "(max-width: 720px)"; //Celular pequeño
+$md: "(max-width: 992px)"; //Tablet mediano
+
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'EB Garamond', serif;
+    background-color: $color4;
+    line-height: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.enviar{
+    height: 55px;
+    width: 200px;
+    background-color: $color1;
+    font-family: 'EB Garamond', serif;
+    text-transform: capitalize;
+    font-weight: 700; 
+    font-size: 24px;
+    color: $color4;
+    border:0;
+    @media #{$sm} {
+        margin-left: auto;
+        height: 35px;
+        width: 90px;
+        font-size: 14px;
+    }
+}

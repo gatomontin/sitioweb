@@ -1,0 +1,55 @@
+.galeria {
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-left: 400px;
+  margin-right: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.columnauno {
+  margin-top: 100px;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.columnauno.uno {
+  background-image: url(yo.jpg);
+  width: 342px;
+  height: 342px;
+}
+.columnauno.dos {
+  background-image: url(lana.jpg);
+  width: 519px;
+  height: 342px;
+  transform: rotate(90deg);
+}
+
+.columnados {
+  box-sizing: border-box;
+  margin-top: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.columnados.tres {
+  background-image: url(quintana.jpg);
+  width: 512px;
+  height: 512px;
+}
+.columnados.cuatro {
+  background-image: url(perec.jpg);
+  width: 512px;
+  height: 512px;
+}

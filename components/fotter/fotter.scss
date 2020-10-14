@@ -1,0 +1,135 @@
+//vars
+$color1:#2A2422;
+$color2:#C4C4C4;
+$color3:#6A6C78;
+$color4:#EFEFEF;
+
+//BREAKPOINTS
+$sm: "(max-width: 720px)"; //Celular pequeño
+$md: "(max-width: 992px)"; //Tablet mediano
+
+//Media
+@media (min-width: 360px) and (max-width: 767.9px) {}
+@media (min-width: 768px) and (max-width: 991.9px) {}
+@media (min-width: 992px) and (max-width: 1999.9px) {}
+@media (min-width: 1200px) and (max-width: 1920px) {}
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'EB Garamond', serif;
+    background-color: $color4;
+    margin: 0;
+    line-height: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+ul{
+    padding-inline-start: 0px!important;
+    margin-block-end: 0px!important;
+}
+
+li{
+    margin-block-end: 0px!important;
+}
+
+footer{
+    position: fixed;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+
+.itemfotter {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .linea {
+        background-color: black;
+        width: 100%;
+        height: 3px;
+    }
+
+    .contactos {
+        background-color: purple;
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+        @media (max-width: 720px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            .mail{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin-bottom: 60px;
+                
+            &:first-of-type {
+                margin-left: 0px;
+            }
+            .enlaces{
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                margin-bottom: 0px;
+            }
+
+            }
+        }
+    }
+
+    .mail {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .enlaces {
+        background-color: yellow;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+        .enlace {
+            background-color:blue;
+            margin-left: 20px;
+
+            &:first-of-type {
+                margin-left: 0px;
+            }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+    }
+
+}
