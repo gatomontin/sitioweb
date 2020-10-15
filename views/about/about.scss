@@ -228,6 +228,67 @@ p {
     }
 }
 
+//galeria
+.galeria {
+    background-color: red;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    @media (max-width: 720px) {
+        display: none;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+
+    .columna {
+        width: 342px;
+        height: 100%;
+        margin-right: 60px;
+        margin-top: 60px;
+
+        .imagenuno {
+            background-image: url(yo.jpg);
+            width: 100%;
+            height: 342px;
+            margin-bottom: 60px;
+        }
+
+        .imagendos {
+            background-image: url(lana.jpg);
+            width: 100%;
+            height: 519px;
+        }
+    }
+
+    .columnados {
+        width: 519px;
+        height: 100%;
+        top: 0px;
+
+        .imagentres {
+            background-image: url(quintana.jpg);
+            width: 100%;
+            height: 519px;
+            margin-bottom: 60px;
+        }
+
+        .imagencuatro {
+            background-image: url(perec.jpg);
+            width: 100%;
+            height: 330px;
+        }
+    }
+}
+
 //fotter
 footer{
     position: fixed;
